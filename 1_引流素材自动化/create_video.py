@@ -74,8 +74,6 @@ def get_txt_wx_account():
 
 if __name__ == '__main__':
     wx_array = get_txt_wx_account()
-    print(wx_array)
-    pass
     my_array = get_video_template()
     for item_text in wx_array:
         yl_video(random.choice(my_array), item_text)
