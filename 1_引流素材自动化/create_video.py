@@ -56,7 +56,7 @@ def yl_video(video_path, wx_text):
 
 
 def get_video_template():
-    template_dir = 'E:/PythonProject/1000PythonCode/1_引流素材自动化/assets/videos'
+    template_dir = 'assets/videos'
     template_files = []
     for root, dirs, files in os.walk(template_dir):
         for file in files:
@@ -74,9 +74,8 @@ def get_txt_wx_account():
 
 if __name__ == '__main__':
     wx_array = get_txt_wx_account()
-    print(wx_array)
-    pass
     my_array = get_video_template()
+    print()
     for item_text in wx_array:
         yl_video(random.choice(my_array), item_text)
         print(f"已为您生成微信号为 {item_text} 的引流视频！")
