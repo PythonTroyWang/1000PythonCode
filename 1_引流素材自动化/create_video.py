@@ -1,6 +1,9 @@
 from moviepy.editor import *
 import random
 import os
+# 更换conda环境，解决IMAGEMAGICK环境问题
+from moviepy.config import change_settings
+change_settings({"IMAGEMAGICK_BINARY": "magick"})
 
 
 def yl_video(video_path, wx_text):
