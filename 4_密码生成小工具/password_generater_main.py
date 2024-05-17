@@ -5,6 +5,9 @@ from PyQt6.QtWidgets import QApplication, QDialog, QMessageBox
 import password_generate
 import random
 
+import warnings
+warnings.filterwarnings('ignore', category=DeprecationWarning)
+
 
 class MyPasswordGenerate(password_generate.Ui_PasswordGenerate, QDialog):
 
